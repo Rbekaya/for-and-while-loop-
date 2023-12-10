@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop - for and while </title>
+</head>
+<body>
+    
+<h3>Ex1:</h3> 
+<h4> Write a for loop that prints the numbers from 12 to 24 </h4>
+<script>
+    
+     for(let x=12;x<=24;x++){
+        document.write("The number " + x + " is in range<br>")
+     }
+     
+</script>
+
+<h3> Ex2:</h3>
+<h4> Write a for loop that prints the ODD numbers from 7 to 31 </h4>
+<script>
+    for(let x = 7;x<=31;x++ ){
+        if(x%2!=0){
+            document.write(x + "<br>" )
+        }
+    }
+</script>
+
+<h3> Ex3:</h3>
+<h4> Write a for loop that prints the EVEN numbers from 10 to -20. </h4>
+<script>
+for(let x = 10 ;x>=-20;x-- ){
+        if(x%2==0){
+            document.write(x + "<br>" )
+        }
+    }
+</script>
+<h3>Ex4:</h3>
+<h4> Write a for loop that iterates through all numbers from 1 to 45. Print the following: <br>
+    ● For each multiples of 3 print “Fizz” <br>
+    ● For each multiples of 5 print “Buzz”<br>
+    ● For each multiples of 3 and 5 print “FizzBuzz” </h4>
+<script>
+    for(x=1;x<=45;x++){
+        if(x%3==0 && x%5==0){
+            document.write(x + " is FizzBuzz<br>")
+        }
+        else if(x%3==0){
+            document.write(x + " is Fizz<br>")
+        }
+      
+        else if(x%5==0){
+            document.write(x + " is Buzz<br>")
+        }
+    }
+</script>
+<h3> Ex5:</h3>
+<h4> Write a function that receives an array that calculates the sum of all the numbers in the
+    following array. <br>
+    numbersArray = [1,13,22,123,49,34,5,24,57,45]
+     </h4>
+     <script>
+        let numbersArray = [1,13,22,123,49,34,5,24,57,45]
+        let sum= 0;
+       for(index=0;index < numbersArray.length;index++){
+        sum += numbersArray[index];
+       }
+       document.write('Sum:', sum);
+</script>
+</body>
+</html>
